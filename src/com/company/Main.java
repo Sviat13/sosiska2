@@ -1,18 +1,18 @@
 package com.company;
 
+import java.io.*;
+
 public class Main {
 
-    public static void main(String[] args) {
-
-       String s = "It's Windows path: \"C:\\Program Files\\Java\\jdk1.7.0\\bin\"";
-        String s1 = "It's Java string: \\\"C:\\\\Program Files\\\\Java\\\\jdk1.7.0\\\\bin\\\"";
-        System.out.println(s);
-        System.out.println(s1);
-
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));//сочитаем два метода через посредника InputStreamRead
+        String name1 = reader.readLine();
+        String name2 = reader.readLine();
+        String name3 = reader.readLine();
+        System.out.print(name1 +" +"+  name2 +"+"+  name3+  " = Чистая любовь, да-да!");
 
     }
 }
-
 
 
 
